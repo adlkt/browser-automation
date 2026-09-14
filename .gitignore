@@ -9,3 +9,15 @@ node_modules/
 
 .workbuddy
 .DS_Store
+
+# VS Code：只保留可共享的项目配置，其余（含工具生成的 mcp.json）一律忽略
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
+
+.agents

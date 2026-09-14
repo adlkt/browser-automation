@@ -1,4 +1,4 @@
-# AGETNS.md
+# AGENTS.md
 
 ## 提交规范
 
