@@ -41,7 +41,7 @@ test.describe('结算', () => {
     await expect(checkout.page.getByTestId('inventory-item-name')).toHaveText('Sauce Labs Backpack');
     await expect(checkout.subtotal).toHaveText('Item total: $29.99');
     // 
-    await expect(checkout.total).toHaveText('Total: $99.99');
+    await expect(checkout.total).toHaveText('Total: $32.39');
 
     await checkout.finishButton.click();
 
