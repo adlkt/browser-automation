@@ -21,3 +21,9 @@ node_modules/
 .playwright-cli/
 
 .agents
+.codex
+
+# 项目级本地 settings（MCP 审批状态等，机器私有）
+.codebuddy
+
+mcp.json
