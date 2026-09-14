@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    // 显式声明加载 node 的全局类型（process/Buffer 等）
+    "types": ["node"]
+  }
+}
