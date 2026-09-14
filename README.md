@@ -5,6 +5,8 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+English | [简体中文](./README.zh-CN.md)
+
 End-to-end test automation for [saucedemo.com](https://www.saucedemo.com/) — a demo e-commerce app — built with **Playwright + TypeScript**.
 
 The suite covers the full critical path of an online store: authentication, catalog browsing, cart management, and checkout — using the Page Object Model for maintainability and `storageState` for fast, reusable login sessions.
