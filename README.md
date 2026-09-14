@@ -1,6 +1,6 @@
 # saucedemo E2E Test Suite
 
-[![Playwright Tests](https://github.com/YOUR_GH_USERNAME/browser-automation/actions/workflows/playwright.yml/badge.svg)](https://github.com/YOUR_GH_USERNAME/browser-automation/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/adlkt/browser-automation/actions/workflows/playwright.yml/badge.svg)](https://github.com/adlkt/browser-automation/actions/workflows/playwright.yml)
 [![Playwright](https://img.shields.io/badge/Playwright-1.63-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
