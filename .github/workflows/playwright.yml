@@ -1,24 +1,37 @@
 name: Playwright Tests
+
 on:
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch:
+
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+
+    - uses: pnpm/action-setup@v4
+      with:
+        version: 11
+
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
+        cache: pnpm
+
     - name: Install dependencies
-      run: npm install -g pnpm && pnpm install
+      run: pnpm install --frozen-lockfile
+
     - name: Install Playwright Browsers
       run: pnpm exec playwright install --with-deps
+
     - name: Run Playwright tests
-      run: pnpm exec playwright test
+      run: pnpm test
+
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:

@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
-    // 显式声明加载 node 的全局类型（process/Buffer 等）
+    // package.json 为 "type": "module"，配置文件跑在 ESM 下，
+    // 需要 ESNext 模块体系才允许 import.meta（否则报 TS1343）
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    // 只做类型检查，避免 tsc 把 .js 产物吐到源码目录
+    "noEmit": true,
+    // 显式声明加载 node 的全局类型（process/Buffer/import.meta.dirname 等）
     "types": ["node"]
   }
 }
